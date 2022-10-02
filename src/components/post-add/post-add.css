@@ -1,0 +1,10 @@
+.form-panel {
+    margin-top: 20px;
+  }
+  
+  .form-panel .new-post {
+    width: auto;
+    flex-grow: 1;
+    margin-right: 3px;
+    color: rgb(168, 9, 97);
+  }
