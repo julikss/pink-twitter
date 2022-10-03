@@ -1,0 +1,63 @@
+.post-item {
+    font-size: 1.25rem;
+}
+
+.post-item button {
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.post-item button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.post-item .btn-star {
+    color: rgb(134, 118, 206);
+}
+
+.post-item .btn-trash {
+    color: rgb(206, 118, 133);
+}
+
+.post-item .btn-trash:hover {
+    color: rgb(134, 118, 206);
+}
+
+.post-item .fa-heart {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    color: rgb(206, 118, 133);
+    transition: 0.3s all;
+    transform: translateX(30px);
+    opacity: 0;
+}
+
+.post-item-label {
+    display: block;
+    line-height: 35px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.5s all;
+    color: rgb(134, 118, 206);
+}
+
+.post-item.like .fa-heart {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.post-item.star .post-item-label {
+    color: #FFD700;
+}
+
+.post-item.star .btn-star {
+    color: #eff16a;
+}
