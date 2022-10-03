@@ -29,7 +29,7 @@ export default class PostAdd extends Component {
                 onSubmit={this.onSubmit}>
                 <input
                     type="text"
-                    placeholder="Place for your thoughts..."
+                    placeholder="Enter your thoughts..."
                     className="form-control new-post"
                     onChange={this.onTextChange}
                     value={this.state.msg}
