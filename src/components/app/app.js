@@ -5,6 +5,7 @@ import PostAdd from '../post-add';
 import PostList from '../post-list';
 import PostSearch from '../post-search';
 import PostFilter from '../post-filter';
+import NavHeader from '../navbar';
 
 import './app.css';
 
@@ -123,6 +124,7 @@ export default class App extends Component {
 
         return (
             <div className="app">
+                <NavHeader />
                 <AppHeader 
                     liked={liked}
                     numOfPosts={numOfPosts}/>
@@ -136,7 +138,7 @@ export default class App extends Component {
                     onImportant={this.onImportant}
                     onLiked={this.onLiked}
                 />
-                <PostAdd onAddPost={this.addPost}/>
+                <PostAdd onAddPost={this.addPost}/>                
             </div>
             
         )
