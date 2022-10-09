@@ -4,15 +4,16 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './navbar.css';
 
-
 const NavHeader = () => {
     return (
-        <Navbar variant="light">
+        <Navbar variant="light liner">
         <Container>
-          <Navbar.Brand className="heading">Place for your thoughts</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="">Sign up</Nav.Link>
-            <Nav.Link href="#pricing">Log in</Nav.Link>
+          <img className="logo" src="../../../../../logo.png" alt="logo" />
+          <Nav className="heading">Place for your thoughts</Nav>
+          <Nav className="me-auto links">
+            <Nav.Link href="https://github.com/julikss/pink-twitter">
+                <i className="fa fa-github"></i>
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>

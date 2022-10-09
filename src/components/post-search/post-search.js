@@ -24,7 +24,7 @@ export default class PostSearch extends Component {
             <input 
                 className="form-control search-input"
                 type="text"
-                placeholder="Search by tweets"
+                placeholder="Search..."
                 onChange={this.onUpdateSearch}
             />
         )

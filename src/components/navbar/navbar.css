@@ -1,3 +1,23 @@
 .heading {
-    color: white;
+    font-size: 25px;
+    color: rgb(206, 118, 133);
+}
+
+.liner {
+    border-bottom: 2px solid white; 
+}
+
+.logo {
+    margin-left: -10px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.links {
+    margin-left: 445px;
+    font-size: 20px;
+}
+
+.fa-github {
+    font-size: 25px;
 }

@@ -5,7 +5,8 @@ export default class PostFilter extends Component{
         super(props);
         this.buttons = [
             {name: 'all', label: 'All'},
-            {name: 'like', label: 'Liked'}
+            {name: 'like', label: 'Liked'},
+            {name: 'star', label: 'Important'}
         ]
     }
 
