@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import AppHeader from '../app-header';
 import PostAdd from '../post-add';
 import PostList from '../post-list';
@@ -142,7 +141,6 @@ export default class App extends Component {
                 />
                 <PostAdd onAddPost={this.addPost}/>                
             </div>
-            
         )
     }
 }

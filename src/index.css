@@ -14,28 +14,3 @@ code {
     monospace;
 }
 
-.banner-left {
-  float: left;
-  width: 25%;
-  min-height: 100%;
-  border-right: 3px solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      rgb(206, 118, 133), 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
-}
-
-.banner-right {
-  float: right;
-  width: 25%;
-  min-height: 100%;
-  border-left: 3px solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      rgb(206, 118, 133), 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
-}
