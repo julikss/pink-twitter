@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/pink-twitter/precache-manifest.fbdd831988bbcdcbf3a9b4a6223f971d.js"
+  "/pink-twitter/precache-manifest.6a69c6ed26edb2607c1bb66b75233739.js"
 );
 
 workbox.clientsClaim();

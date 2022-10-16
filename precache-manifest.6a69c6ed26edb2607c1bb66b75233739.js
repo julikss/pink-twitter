@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "b66ceede0cb4aef1fb98",
+    "revision": "eb75224c875cca43dacb",
     "url": "/pink-twitter/static/css/main.1e2183a6.chunk.css"
   },
   {
-    "revision": "b66ceede0cb4aef1fb98",
-    "url": "/pink-twitter/static/js/main.b66ceede.chunk.js"
+    "revision": "eb75224c875cca43dacb",
+    "url": "/pink-twitter/static/js/main.eb75224c.chunk.js"
   },
   {
     "revision": "d2abe163afe9569d8c3b",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/pink-twitter/static/media/pink-banner.95a45e7a.jpg"
   },
   {
-    "revision": "b25389bdb31d07db6aaca35cb640e346",
+    "revision": "dc22fe442af6f027ce9470eb97ee0f35",
     "url": "/pink-twitter/index.html"
   }
 ];
