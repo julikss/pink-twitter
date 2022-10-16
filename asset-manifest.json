@@ -1,14 +1,14 @@
 {
-  "main.css": "/pink-twitter/static/css/main.6c603598.chunk.css",
-  "main.js": "/pink-twitter/static/js/main.aa86d4ca.chunk.js",
-  "main.js.map": "/pink-twitter/static/js/main.aa86d4ca.chunk.js.map",
+  "main.css": "/pink-twitter/static/css/main.19d913e5.chunk.css",
+  "main.js": "/pink-twitter/static/js/main.ff003af5.chunk.js",
+  "main.js.map": "/pink-twitter/static/js/main.ff003af5.chunk.js.map",
   "static/js/1.d2abe163.chunk.js": "/pink-twitter/static/js/1.d2abe163.chunk.js",
   "static/js/1.d2abe163.chunk.js.map": "/pink-twitter/static/js/1.d2abe163.chunk.js.map",
   "runtime~main.js": "/pink-twitter/static/js/runtime~main.b81c08e9.js",
   "runtime~main.js.map": "/pink-twitter/static/js/runtime~main.b81c08e9.js.map",
   "static/media/app-banner.css": "/pink-twitter/static/media/pink-banner.95a45e7a.jpg",
-  "static/css/main.6c603598.chunk.css.map": "/pink-twitter/static/css/main.6c603598.chunk.css.map",
+  "static/css/main.19d913e5.chunk.css.map": "/pink-twitter/static/css/main.19d913e5.chunk.css.map",
   "index.html": "/pink-twitter/index.html",
-  "precache-manifest.0a50978bcf8cb8bb69b36f7ca935c3f8.js": "/pink-twitter/precache-manifest.0a50978bcf8cb8bb69b36f7ca935c3f8.js",
+  "precache-manifest.22ec875168d285f4f6c606a4879837c7.js": "/pink-twitter/precache-manifest.22ec875168d285f4f6c606a4879837c7.js",
   "service-worker.js": "/pink-twitter/service-worker.js"
 }
