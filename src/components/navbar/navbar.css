@@ -25,15 +25,16 @@
     text-decoration: none;
 }
 
-.links .horoscope {
-    border: 2px solid white;
+.links .link-button {
+    border: 2px solid rgb(250, 247, 217);
     padding: 5px 10px 5px 10px;
     border-spacing: 10px;
     border-radius: 5px;
     background-color: white;
+    margin-right: 5px;
 }
 
-.links .horoscope:hover {
+.links .link-button:hover {
     color: rgb(134, 118, 206);
 }
 

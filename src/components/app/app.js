@@ -6,6 +6,7 @@ import PostSearch from '../post-search';
 import PostFilter from '../post-filter';
 import NavHeader from '../navbar';
 import Horoscope from '../horoscope/horoscope';
+import StandUp from '../standup/standup';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './app.css';
 
@@ -15,7 +16,8 @@ export default class App extends Component {
         this.state = {
             data: [],
             term: '',
-            filter: 'all'
+            filter: 'all',
+            joke: this.getJoke()
         }
         this.addPost = this.addPost.bind(this);
         this.deletePost = this.deletePost.bind(this);
@@ -23,6 +25,7 @@ export default class App extends Component {
         this.onLiked = this.onLiked.bind(this);
         this.onUpdateSearch = this.onUpdateSearch.bind(this);
         this.onFilter = this.onFilter.bind(this);
+        this.getJoke = this.getJoke.bind(this);
 
         this.countId = 0;
     };
@@ -118,8 +121,25 @@ export default class App extends Component {
         this.setState({ filter });
     }
 
+    getJoke() {
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': '61e5ed6331mshf9f5b6945f9336cp109e69jsn5f7545539346',
+                'X-RapidAPI-Host': 'jokeapi-v2.p.rapidapi.com'
+            }
+        };
+
+        fetch('https://jokeapi-v2.p.rapidapi.com/joke/Any?type=single&format=json&idRange=0-9&blacklistFlags=nsfw%2Cracist', options)
+            .then(response => response.json())
+            .then(response => {
+                this.setState({ joke: response.joke });
+            })
+            .catch(err => this.setState({ joke: 'No jokes today(' }));  
+    }
+
     render() {
-        const { data, term, filter } = this.state;
+        const { data, term, filter, joke } = this.state;
         const liked = data.filter(item => item.like).length;
         const numOfPosts = data.length;
         const visiblePosts = this.filterPost(this.searchPost(data, term), filter);
@@ -131,6 +151,7 @@ export default class App extends Component {
                 <Routes>
                     <Route path='/horoscope' element={<Horoscope/>} />
                     <Route path='/' />
+                    <Route path='/fortune' element={<StandUp text={joke}/>} />
                 </Routes>
                 </Router>
                 <AppHeader 

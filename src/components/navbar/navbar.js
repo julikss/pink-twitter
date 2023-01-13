@@ -18,7 +18,10 @@ const NavHeader = () => {
           </Nav>
           <Nav className="links">
           <NavLink to="/horoscope" className="link">
-            <i className="horoscope">Check your horoscope</i>
+            <i className="link-button">Horoscope</i>
+          </NavLink>
+          <NavLink to="/fortune" className="link">
+            <i className="link-button">Jokes</i>
           </NavLink>
           <NavLink href="https://github.com/julikss/pink-twitter">
             <span className="code-link"><FontAwesomeIcon icon={faCode} /></span>
