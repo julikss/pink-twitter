@@ -21,14 +21,14 @@
 }
 
 .post-item .btn-trash {
-    color: rgb(206, 118, 133);
+    color: rgb(209, 99, 167);
 }
 
-.post-item .btn-trash:hover {
+ .btn-trash:hover {
     color: rgb(134, 118, 206);
 }
 
-.post-item .fa-heart {
+.post-item .heart-icon {
     width: 35px;
     height: 35px;
     text-align: center;
@@ -49,7 +49,7 @@
     color: rgb(134, 118, 206);
 }
 
-.post-item.like .fa-heart {
+.post-item.like .heart-icon {
     opacity: 1;
     transform: translateX(0px);
 }

@@ -1,6 +1,9 @@
 .heading {
+    margin-top: 25px;
     font-size: 25px;
-    color: rgb(206, 118, 133);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(209, 99, 167);
 }
 
 .liner {
@@ -8,10 +11,39 @@
 }
 
 .links {
-    margin-left: 470px;
-    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 25px;
 }
 
-.fa-github {
+.links i {
+    font-size: 20px;
+    color: rgb(209, 99, 167);
+    
+}
+
+.links .horoscope {
+    border: 2px solid white;
+    padding: 5px 10px 5px 10px;
+    border-spacing: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.links .horoscope:hover {
+    color: rgb(134, 118, 206);
+}
+
+.links .code-link {
+    color: rgb(209, 99, 167);
     font-size: 25px;
+    margin-left: 10px;
+}
+
+.links .code-link:hover {
+    color: rgb(134, 118, 206);
+}
+
+.heading .header-icon {
+    color: white;
+    margin-right: 10px;
 }

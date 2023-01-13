@@ -4,12 +4,7 @@
     justify-content: space-between;
 }
   
-.app-header h1 {
-    font-size: 26px;
-    color: rgb(134, 118, 206);
-}
-  
 .app-header h2 {
     font-size: 1.2rem;
-    color: rgb(206, 118, 133);
+    color: rgb(209, 99, 167);
 }

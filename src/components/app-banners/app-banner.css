@@ -1,22 +1,19 @@
 .banner {
-  background-image: url("./pink-banner.jpg");
-  background-size: cover;
   width: 25%;
   height: 100vh;
-  border-image: 
-      linear-gradient(
-        to bottom, 
-        rgb(206, 118, 133), 
-        rgba(0, 0, 0, 0)
-      ) 1 100%;
+  min-height: 100%;
 }
 
 .left { 
-    float: left;  
-    border-right: 3px solid;
+    position: fixed;
+    background: linear-gradient(270deg, pink, white);
+    left: 0%;  
+    border-right: 3px solid white;
 }
   
 .right {
-    float: right;
-    border-left: 3px solid;
+    position: fixed;
+    background: linear-gradient(90deg, pink, white);
+    right: 0%;
+    border-left: 3px solid white;
 }

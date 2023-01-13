@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 import './post-item.css';
 
@@ -21,15 +25,15 @@ export default class PostItem extends Component {
                         type="button" 
                         className="btn-star btn-sm"
                         onClick={onImportant}>
-                            <i className="fa fa-star"></i>
+                            <span className="star-icon"><FontAwesomeIcon icon={faStar} /></span>
                     </button>
                     <button 
                         type="button" 
                         className="btn-trash btn-sm"
                         onClick={onDelete}>
-                            <i className="fa fa-trash-o"></i>
+                            <span className="trash-icon"><FontAwesomeIcon icon={faTrash} /></span>
                     </button>
-                    <i className="fa fa-heart"></i>
+                    <span className="heart-icon"><FontAwesomeIcon icon={faHeart} /></span>
                 </div>
             </div>
         )
