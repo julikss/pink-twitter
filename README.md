@@ -1,7 +1,7 @@
 # Pink Twitter App
 
-This app is a great place for your thoughts/todos.
-It is created by using ReactJS.
+This app is a great place for your thoughts. Also, you can read about your zodiac sign and get a joke.
+It is created by using ReactJS and Bootstrap.
 
 [Try it...](https://julikss.github.io/pink-twitter/)
 
