@@ -21,6 +21,10 @@
     
 }
 
+.link {
+    text-decoration: none;
+}
+
 .links .horoscope {
     border: 2px solid white;
     padding: 5px 10px 5px 10px;

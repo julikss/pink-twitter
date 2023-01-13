@@ -5,7 +5,8 @@ import PostList from '../post-list';
 import PostSearch from '../post-search';
 import PostFilter from '../post-filter';
 import NavHeader from '../navbar';
-
+import Horoscope from '../horoscope/horoscope';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './app.css';
 
 export default class App extends Component {
@@ -125,7 +126,13 @@ export default class App extends Component {
 
         return (
             <div className="app">
+                <Router>
                 <NavHeader />
+                <Routes>
+                    <Route path='/horoscope' element={<Horoscope/>} />
+                    <Route path='/' />
+                </Routes>
+                </Router>
                 <AppHeader 
                     liked={liked}
                     numOfPosts={numOfPosts}/>
