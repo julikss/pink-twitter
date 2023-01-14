@@ -6,8 +6,9 @@ import PostSearch from '../post-search';
 import PostFilter from '../post-filter';
 import NavHeader from '../navbar';
 import Horoscope from '../horoscope/horoscope';
-import StandUp from '../standup/standup';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import JokesTeller from '../standup/standup';
+import QuoteTeller from '../quote/quote';
+import { BrowserRouter as Router, Routes, Route, Outlet} from 'react-router-dom';
 import './app.css';
 
 export default class App extends Component {
@@ -17,7 +18,8 @@ export default class App extends Component {
             data: [],
             term: '',
             filter: 'all',
-            joke: this.getJoke()
+            joke: this.getJoke(),
+            quote: this.getQuote()
         }
         this.addPost = this.addPost.bind(this);
         this.deletePost = this.deletePost.bind(this);
@@ -138,8 +140,25 @@ export default class App extends Component {
             .catch(err => this.setState({ joke: 'No jokes today(' }));  
     }
 
+    getQuote() {
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': '61e5ed6331mshf9f5b6945f9336cp109e69jsn5f7545539346',
+                'X-RapidAPI-Host': 'quotes-by-api-ninjas.p.rapidapi.com'
+            }
+        };
+        
+        fetch('https://quotes-by-api-ninjas.p.rapidapi.com/v1/quotes?category=inspirational', options)
+            .then(response => response.json())
+            .then(res => {
+                this.setState({ quote: `"${res[0].quote}" - ${res[0].author}` });
+            })
+            .catch(err => console.error(err));
+    }
+
     render() {
-        const { data, term, filter, joke } = this.state;
+        const { data, term, filter, joke, quote } = this.state;
         const liked = data.filter(item => item.like).length;
         const numOfPosts = data.length;
         const visiblePosts = this.filterPost(this.searchPost(data, term), filter);
@@ -150,8 +169,9 @@ export default class App extends Component {
                 <NavHeader />
                 <Routes>
                     <Route path='/horoscope' element={<Horoscope/>} />
-                    <Route path='/' />
-                    <Route path='/fortune' element={<StandUp text={joke}/>} />
+                    <Route path='/home' element={<Outlet/>} />
+                    <Route path='/standup' element={<JokesTeller text={joke}/>} />
+                    <Route path='/quote' element={<QuoteTeller quote={quote}/>} />
                 </Routes>
                 </Router>
                 <AppHeader 

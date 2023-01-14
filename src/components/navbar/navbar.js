@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faLightbulb, faCode } from '@fortawesome/free-solid-svg-icons';
 import './navbar.css';
+
 
 const NavHeader = () => {
     return (
@@ -20,8 +20,11 @@ const NavHeader = () => {
           <NavLink to="/horoscope" className="link">
             <i className="link-button">Horoscope</i>
           </NavLink>
-          <NavLink to="/fortune" className="link">
+          <NavLink to="/standup" className="link">
             <i className="link-button">Jokes</i>
+          </NavLink>
+          <NavLink to="/quote" className="link">
+            <i className="link-button">Quotes</i>
           </NavLink>
           <NavLink href="https://github.com/julikss/pink-twitter">
             <span className="code-link"><FontAwesomeIcon icon={faCode} /></span>

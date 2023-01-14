@@ -52,3 +52,8 @@
     color: white;
     margin-right: 10px;
 }
+
+.heading .header-icon:hover {
+    color: rgb(250, 247, 217);
+    margin-right: 10px;
+}

@@ -22,7 +22,7 @@ class Horoscope extends Component {
         <Navbar className="header">
           <div className="container">
             <NavbarBrand className="text-white">Horoscope:)</NavbarBrand>
-            <NavLink to="/" className="link">
+            <NavLink to="/home" className="link">
             <span className="header-icon"><FontAwesomeIcon icon={faClose} /></span> 
             </NavLink>
           </div>

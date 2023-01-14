@@ -1,12 +1,12 @@
-.standup {
+.quote {
     margin-top: 30px;
     background-color: white;
     border-radius: 5px;
     color: gray;
 }
 
-.standup h4 {
-    color: rgb(209, 99, 167);
+.quote h4 {
+    color: rgb(134, 118, 206);
     font-style: italic;
 }
 .header {
@@ -30,28 +30,22 @@
     color: gray;
 }
 
-.icons{
-    border-top: 1px solid rgb(190, 187, 187);
-    text-align: center;
-    padding-bottom: 13px;
-    padding-top: 15px;
+.form-panel {
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
-
-.bottom-like{
+  
+.form-panel .new-post {
+    width: auto;
+    flex-grow: 1;
+    margin-right: 3px;
     color: rgb(209, 99, 167);
-    font-size: 30px;
-    margin-right: 15px;
 }
 
-.bottom-dislike{
-    color: rgb(34, 16, 27);
-    font-size: 30px;
+.result h4 {
+    color: rgb(209, 99, 167);
 }
 
-.bottom-dislike:hover {
-    color: rgb(146, 8, 8);
-}
-
-.bottom-like:hover {
-    color: rgb(8, 146, 54);
+.result {
+    margin-bottom: 20px;
 }
