@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/pink-twitter/static/css/main.c0d6f3e6.css",
-    "main.js": "/pink-twitter/static/js/main.b52b8b94.js",
+    "main.css": "/pink-twitter/static/css/main.02f8988f.css",
+    "main.js": "/pink-twitter/static/js/main.31685ce9.js",
     "index.html": "/pink-twitter/index.html",
-    "main.c0d6f3e6.css.map": "/pink-twitter/static/css/main.c0d6f3e6.css.map",
-    "main.b52b8b94.js.map": "/pink-twitter/static/js/main.b52b8b94.js.map"
+    "main.02f8988f.css.map": "/pink-twitter/static/css/main.02f8988f.css.map",
+    "main.31685ce9.js.map": "/pink-twitter/static/js/main.31685ce9.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0d6f3e6.css",
-    "static/js/main.b52b8b94.js"
+    "static/css/main.02f8988f.css",
+    "static/js/main.31685ce9.js"
   ]
 }
